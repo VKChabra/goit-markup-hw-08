@@ -1,0 +1,49 @@
+.speciality__title {
+  @include font(
+    700,
+    36px,
+    1.17,
+    00.03em,
+    normal
+  );
+  color: inherit;
+  margin-bottom: 50px;
+}
+
+.speciality .list {
+  display: inline-flex;
+  align-items: center;
+}
+
+.speciality__item {
+  width: 370px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.speciality__wrap {
+  position: relative;
+}
+
+.speciality__text {
+  position: absolute;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  /* outline: 1px solid green; */
+  @include font(
+    700,
+    14px,
+    1.15,
+    00.03em,
+    normal
+  );
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--team-text-color);
+  height: 70px;
+  width: 100%;
+  @extend %align_list;
+  justify-content: center;
+  margin-bottom: 4px;
+}

@@ -1,0 +1,48 @@
+.features {
+  padding-bottom: 0;
+}
+
+.features__icon-decoration {
+  display: flex;
+  background-color: var(
+    --third-bg-color
+  );
+  justify-content: center;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.features__titles {
+  @include font(
+    700,
+    14px,
+    1.15,
+    00.03em,
+    normal
+  );
+  text-transform: uppercase;
+  color: inherit;
+  margin-bottom: 10px;
+}
+
+.features__paragraph {
+  @include font(
+    400,
+    14px,
+    1.71,
+    00.03em,
+    normal
+  );
+  color: var(--main-text-color);
+}
+
+.features__list {
+  display: flex;
+}
+
+.features__item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
