@@ -2,7 +2,7 @@
   font-family: "Raleway", sans-serif;
   @include font(
     700,
-    26px,
+    24px,
     1.2,
     00.03em,
     normal
@@ -23,4 +23,23 @@
 
 .logo--dark {
   color: var(--logo-color);
+}
+
+.logo--padding-space {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width:768px) {
+    & {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    }
+  }
+
+  @media screen and (min-width:1200px) {
+    & {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    }
+  }
 }

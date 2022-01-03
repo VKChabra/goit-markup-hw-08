@@ -1,20 +1,21 @@
 .header {
-  @extend %align_list;
-  /* height: 80px; */
+  // @extend %align_list;
   border-bottom: 1px solid #ececec;
 }
 
-.header--container {
-  flex-direction: row;
+.header__menu {
+  display: none;
+  
+  @media screen and (min-width:768px) {
+    & {
+      display: contents;
+      align-items: baseline;
+    }
+  }
 }
 
 .navigation__list {
   display: flex;
-}
-
-.navigation--padding-space {
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .navigation__link {
@@ -38,7 +39,8 @@
 }
 
 .contacts__link {
-  @extend %align_list;
+  display: flex;
+  align-items: baseline;
   @include font(
     500,
     14px,
@@ -67,7 +69,7 @@
 
 .contacts-list {
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
   margin-left: auto;
 }
 
