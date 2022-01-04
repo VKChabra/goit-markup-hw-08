@@ -9,6 +9,7 @@
 }
 
 .speciality__title {
+  text-align: center;
   @include font(
     700,
     36px,
@@ -48,7 +49,6 @@
     00.03em,
     normal
   );
-  text-align: center;
   text-transform: uppercase;
   color: var(--team-text-color);
   height: 70px;

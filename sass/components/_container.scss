@@ -1,50 +1,23 @@
 .container {
-  display: flex;
-  // flex-direction: column;
   align-items: center;
   width: 100%;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
 
-  // @media screen and (min-width:480px) {
-  //   & {
-  //     width: 480px;
-  //   }
-  // }
+  @media screen and (min-width:480px) {
+    & {
+      width: 480px;
+    }
+  }
 
-  // @media screen and (min-width:768px) {
-  //   & {
-  //     width: 768px;
-  //   }
-  // }
+  @media screen and (min-width:768px) {
+    & {
+      width: 768px;
+    }
+  }
 
-  // @media screen and (min-width:1200px) {
-  //   & {
-  //     width: 1200px;
-  //   }
-  // }
+  @media screen and (min-width:1200px) {
+    width: 1200px;
+  }
 }
-// .centering { /* centering an inline element with display:block */
-// 	display: block;
-// 	margin: auto;
-// 	width: 50%;
-// }
-
-// .centering2 {
-// 	margin: auto;
-// 	width: 80%;
-// }
-
-
-// }
-
-// .centering3 .inner { /* dragging it back into focus */
-// 	position: relative;
-// 	left: 50%;
-// }
-
-// .centering4 { /* centering with display:table */
-// 	display: table;
-// 	margin: auto;
-// }
