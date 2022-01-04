@@ -29,17 +29,20 @@
 }
 
 .clients__item--position {
-  @media screen and (max-width:767px) {
+  @media screen and (min-width:480px) {
     &:nth-child(n+5) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width:768px) {
+    &:nth-child(n+4) {
       margin-bottom: 0;
     }
   }
 
   @media screen and (max-width:1199px) {
     margin-bottom: 30px;
-    &:nth-child(n+4) {
-      margin-bottom: 0;
-    }
   }
 
   @media screen and (min-width:1200px) {
