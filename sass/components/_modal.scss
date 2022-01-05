@@ -23,7 +23,8 @@
 }
 
 .modal {
-  position: absolute;
+  max-width: 450px;
+  position: relative;
   top: 50%;
   left: 50%;
   /* transform: scale(1); */
@@ -37,6 +38,14 @@
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  // @media screen and (min-width:480px) {
+  //   width: 450px;
+  // }
+
+  @media screen and (min-width:1200px) {
+    max-width: 528px;
+  }
 }
 
 .modal__title {
@@ -98,16 +107,16 @@
   border-radius: 4px;
   outline: 0;
   cursor: pointer;
-}
 
-.modal__input-field:hover,
-.modal__input-field:focus {
+  &:hover,
+  &:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   transition: background 250ms
     cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms
     cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
 
 .modal__input-container:hover
