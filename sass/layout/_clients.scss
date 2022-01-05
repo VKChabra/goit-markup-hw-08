@@ -1,13 +1,25 @@
 .clients__title {
   @include font(
     700,
-    36px,
-    1.17,
+    28px,
+    33px,
     00.03em,
     normal
   );
   text-align: center;
-  margin-bottom: 50px;
+
+  @media screen and (min-width:1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+.clients__title--indent {
+  margin-bottom: 30px;
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
@@ -22,6 +34,10 @@
 
 .clients__item {
   width: 210px;
+
+  @media screen and (min-width:768px) {
+    width: 226px;
+  }
 
   @media screen and (min-width:1200px) {
     width: 170px;

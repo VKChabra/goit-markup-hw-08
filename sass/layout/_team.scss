@@ -84,13 +84,25 @@
 .team__title {
   @include font(
     700,
-    36px,
-    1.17,
+    28px,
+    33px,
     00.03em,
     normal
   );
   color: inherit;
-  margin-bottom: 50px;
+
+  @media screen and (min-width:1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+.team__title--indent {
+  margin-bottom: 30px;
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 50px;
+  }
 }
 
 .team__info {

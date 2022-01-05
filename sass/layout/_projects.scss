@@ -3,11 +3,17 @@
 }
 
 .projects__filters-list {
-  margin-bottom: 40px;
-
   @media screen and (min-width:480px) {
     display: inline-flex;
     flex-wrap: wrap;
+  }
+}
+
+.projects__filters-list--space {
+  margin-bottom: 40px;
+  
+  @media screen and (min-width:768px) {
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width:1200px) {
@@ -34,6 +40,14 @@
   
   @media screen and (min-width:480px) {
     margin-right: 8px;
+  }
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -90,11 +104,18 @@
     &:nth-child(even) {
       margin-right: 0;
     }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (min-width:1200px) {
     &:nth-child(3n) {
       margin-right: 0;
+    }
+    &:nth-child(n+7) {
+      margin-bottom: 0;
     }
   }
 }
