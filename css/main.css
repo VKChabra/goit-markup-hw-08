@@ -1459,12 +1459,13 @@ img {
   margin-bottom: 30px;
 }
 
+.projects__item--position:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects__item--position:nth-child(even) {
     margin-right: 0;
-  }
-  .projects__item--position:last-child {
-    margin-bottom: 0;
   }
 }
 
